@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dulces Creaciones</title>
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+</head>
+
+<body>
+	<header class="header-principal">
+		<nav class="nav-principal">
+   			<div class="contenedor">
+   			<!-- Iconos de las redes sociales -->
+   				<div class="social-icon" id="icon">
+		        	 <a href="https://www.facebook.com/creacionesdulc/" target="_blank" class="social-icon-link"><span class="iconos"><i class="fab fa-facebook-square"></i></span></a>
+		   		</div>
+			<!-- Logo -->
+				<div class="contenedor-logo" id="logo">
+					<a style="text-decoration: none" id="home" href="" class=""><img src="img/logo_secundario-05.png" alt="logo_dc" class="logo"></a>
+				</div>
+			<!-- Boton del menu desplegble -->
+				<spam class="icon-menu" id="btnMenu">
+					<i class="fas fa-cookie"></i>
+				</spam>
+			<!-- Menu -->
+				<nav>
+			    	<ul class="menu" id="menu">
+			    		<li class="menu-item"><a href="#home" class="menu-link"  style="text-decoration: none">Home</a></li>
+			     	    <li class="menu-item"><a href="#productos" class="menu-link"  style="text-decoration: none">Productos</a></li>
+			    	    <li class="menu-item"><a href="#servicios" class="menu-link" style="text-decoration: none">Servicios</a></li>
+			    	    <li class="menu-item"><a href="#contactos" class="menu-link" style="text-decoration: none">Contacto</a></li>
+			        </ul>
+		     	</nav>
+	<!-- Script subrayado cada vez que se selecciona algun item del menu -->
+		<script type="text/javascript">
+			window.onload=function()
+			{for(var i=0,accept=document.getElementById('menu').getElementsByTagName('a');i<accept.length;i++){
+			accept[i].onclick=function(){for(var i=0;i<accept.length;i++){
+			accept[i].style.textDecoration='none';{this.style.textDecoration='underline';}}}}}
+		</script>
+				</div>
+			</nav>
+		</header>
+<!-- Script despliegue de menu -->
+<script src="js/menu.js"></script>
+
+ <!-- Inicio del Banner -->
+ 	<div class="slideshow-container">
+	 <!-- Full-width images with number and caption text -->
+	  <div class="mySlides fade">
+	    <div class="numbertext"></div>
+	    <img class="imagen" src="img/alfajor.jpg">
+	    <div class="text"></div>
+	  </div>
+	  <div class="mySlides fade">
+	    <div class="numbertext"></div>
+	    <img class="imagen" src="img/torta_fruti_durazno.jpg">
+	    <div class="text"></div>
+	  </div>
+	  <div class="mySlides fade">
+	    <div class="numbertext"></div>
+	    <img class="imagen" src="img/galletas.jpg">
+	    <div class="text"></div>
+	  </div>
+	  <div class="mySlides fade">
+	    <div class="numbertext"></div>
+	    <img class="imagen" src="img/torta_frutilla.jpg">
+	    <div class="text"></div>
+	  </div>
+
+	  <!-- Next and previous buttons -->
+
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	  
+
+	  <!-- The dots/circles -->
+	 <!--
+	  <div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span>
+	  <span class="dot" onclick="currentSlide(2)"></span>
+	  <span class="dot" onclick="currentSlide(3)"></span>
+	  <span class="dot" onclick="currentSlide(4)"></span>
+	  </div>
+	  -->
+	  <script>
+	  var slideIndex = 1;
+	  showSlides(slideIndex);
+
+	  function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	  }
+
+	  function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	  }
+
+	  function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  }
+	  </script>       
+ <!-- Cierre del Banner -->
+
+<div class="separador-header">
+	<p class="contenido"><a href="" class="separador-link columna-50">Tu pasteleria online en Salta</a></p>
+	<!--<p class="contenido"><a href="" class="separador-link columna-50">Has tu pedido con anticipación </a></p>-->
+</div>
+
+
+<div class="div-acerca">
+	<div class="columna-50">
+		<p class="text-acerca1">¡Hola, soy Sabrina!</p>
+		<p class="text-acerca2">Quiero contarte que elegí hace unos años atrás el mundo de la pasteleria como mi vocación, es algo que me apasiona y asi fue que decidí darle vida a Dulces Creaciones.<br><br>
+		En cada elaboración va un poquito de mi esencia, de lo que soy y de lo que me gusta hacer. Me gusta ser parte de los eventos más importantes en la vida de mis clientes, para mi es un privilegio. </p>	
+		<br>
+		<button class="btn-acerca "><a href="https://wa.link/v844v6" target="_blank" class="contenedor-btn">Contactame</a></button>
+	</div>
+	<div class="columna-50">
+		<img src="img/sabrina1.jpg" class="img-acerca">
+	</div>
+</div>
+
+
+<br><br>
+<hr  width="10%" />
+
+<!-- PRODUCTOS -->
+	<div class="" id="productos">
+		<h1 class="title-pro"><a href="" class="contenedor-link">Productos </a></h1>
+	</div>
+
+	<div class="">
+		<p class="p-title-pro"><a href="" class="contenedor-link">Si querés algún dulce diferente no dudes en contactame y te haré un presupuesto...</a></p>
+	</div>
+
+	<div class="contenedor-productos display-pro" style="grid-auto-flow: row;">
+		<div class="contenedor-pro item1">
+			<img class="img-pro" src="img/torta2.jpg">
+			<h2 class="text-pro">Torta y biscochos</h2>
+			<p class="p-pro">Torta selva negra, tortas de diferentes sabores del biscochuelo, con o sin relleno, y decoradas </p>
+		</div>
+		<div class="contenedor-pro item2">
+			<img class="img-pro" src="img/tartaleta.jpg">
+			<h2 class="text-pro">Tartaletas</h2>
+			<p class="p-pro">Pie de limón, tartas frutales con deliciosa crema; tartas grutales mixtas decoradas con crema </p>
+		</div>
+		<div class="contenedor-pro item4">
+			<img class="img-pro" src="img/galletas2.jpg">
+			<h2 class="text-pro">Galletitas</h2>
+			<p class="p-pro">Galletitas de manteca decoradas</p>
+		</div>
+		<div class="contenedor-pro item3">
+			<img class="img-pro" src="img/alfajor2.jpg">
+			<h2 class="text-pro">Alfajores</h2>
+			<p class="p-pro">De maicena y marplatences </p>
+		</div>
+	</div>
+	
+<hr  width="10%" />
+
+<!-- SERVICIOS -->
+	<div class="" id="servicios">
+		<h1 class="title-serv"><a href="" class="contenedor-link">Servicios</a></h1>
+	</div>
+
+	<div class="">
+		<p class="p-title-serv"><a href="" class="contenedor-link">Haré decoraciones para vos, para evento, reunión o cumpleaños...</a></p>
+	</div>
+
+	<div class="contenedor-servicios display-serv" style="grid-auto-flow: row;">
+		<div class="contenedor-serv item1">
+			<img class="icon-serv" src="img/cup1.jpg">
+			<h2 class="text-serv">Catering para eventos</h2>
+			<p class="p-serv"> Postres pequeños o grandes para reuníones, <br>decorados para el motivo de cada evento  </p>
+		</div>
+		<div class="contenedor-serv item2">
+			<img class="icon-serv" src="img/torta.jpg">
+			<h2 class="text-serv">Tortas personalizadas</h2>
+			<p class="p-serv">Para cumpleaños y festejos </p>
+		</div>
+	</div>
+
+
+<!-- CONTACTO + FORMULARIO -->
+	<div  class="background-contacto">
+		<div class="">
+			<p class="contenido1"><a  id="contactos" href="" class="contenedor-link">Para cualquier consulta, escribeme un mensaje...</a></p>
+		</div>
+		<div class="contacto">
+		    <div class="columna-30"></div>
+	        <div class="formulario columna-40">
+	            <!-- formulario de contacto -->
+	            <form action="envia.php" method="post" class="form-consulta"> 
+	              
+	              <label class="text-form">Nombre y apellido: <span>*</span>
+	                <input type="text" name="nombre" placeholder="Nombre y apellido" class="campo-form" required>
+	              </label>
+	             
+	              <label class="text-form">Email: <span>*</span>
+	                <input type="email" name="email" placeholder="Email" class="campo-form" required>
+	              </label>
+	    
+	              <label class="text-form">Consulta:
+	                <textarea name="consulta" placeholder="Escriba su consulta" class="campo-form"></textarea>
+	              </label>
+	  
+	              <input type="submit" value="Enviar" class="btn-form">
+	            </form>
+	        </div>
+	         <div class="columna-30"></div>
+		</div>
+	</div>
+
+
+<!-- BOTON FLOTANTE HOME-->        
+	<div class="btn-home">
+	  <a class="btn_home_img" href="#logo"><i class="fas fa-angle-up"></i></a>
+	</div>
+
+<!-- BOTON FLOTANTE WHATSAPP-->        
+	<div class="btn-whatsapp">
+	  <a href="https://wa.link/v844v6" target="_blank" class="btn_home_img" ><i class="fab fa-whatsapp"></i></a>
+	</div>
+
+<!-- PIE DE PAGINA -->        
+	<footer class="footer-principal">
+	    <div class="contenedor">
+	          <div class="columna-100-33">
+	              <h2 class="titulo-columna">Acerca de Dulces Creaciones</h2>
+	              <p class="desc-columna texto-pie"> Hola, soy Sabrina. Con mi emprendimiento de reposteria casera, busco darte la mejor experiencia de compra, a la vez que creo para vos los mejores dulces.  </p>
+	          </div>
+	          <div class="columna-100-33">
+	              <h2 class="titulo-columna"> Contacto </h2>
+	              <p class="desc-columna texto-pie"><i class="iconos2 fas fa-mobile-alt"></i>+54 9 376 474 2592</p>
+	              <p class="desc-columna texto-pie"><i class="iconos2 far fa-envelope"></i>dulcecreaciones50@gmail.com</p>
+	          </div>
+	          <div class="columna-100-33">
+	              <h2 class="titulo-columna"> Siguenos en redes </h2>
+	              <p class="desc-columna"><a  href="https://www.facebook.com/creacionesdulc/"  class="texto-pie" target="_blank"><i class="iconos2 fab fa-facebook-square"></i>Siguenos</a></p>
+	              <!-- <p class="desc-columna"><a href="" class="iconos2" target="_blank"><i class="iconos2 fab fa-facebook-square"></i>Siguenos</a></p> -->
+	          </div>
+	    </div>
+	</footer>
+
+<!-- Copy-->
+	<div class="copy"><p> Copyright 2020 por Sbitsar </p></div>
+<!-- Script de iconos -->
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+<!-- redirección CSS -->
+<link rel="stylesheet" href="estilo.css">
+
+</body>
+</html>
+
+<!-- <i class="fas fa-cookie-bite"></i>-->
